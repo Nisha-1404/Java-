@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+
+public class TeamFormation {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int totalPlayers = scanner.nextInt();
+        int playersPerTeam = scanner.nextInt();
+        int teamsFormed = totalPlayers / playersPerTeam;
+        int playersLeftOut = totalPlayers % playersPerTeam;
+        System.out.println("Total teams formed: " + teamsFormed);
+        System.out.println("Players left out: " + playersLeftOut);
+        scanner.close();
+        }
+}
